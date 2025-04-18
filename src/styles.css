@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  /* Colors */
+  --color-primary: #ff497c;
+  --color-bg: #f4f4f5;
+  --color-white: #fff;
+  --color-dark: #1f2732;
+  --color-light: #f8f8f8;
+  --color-border: #ddd;
+  --color-text: #333;
+
+  /* Font */
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* Spacing */
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 40px;
+
+  /* Radius & Shadow */
+  --radius: 12px;
+  --shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+html {
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #545454;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer !important;
+  display: inline-block;
+}
+
+.main-btn {
+  background-color: var(--color-primary);
+  border: 0.25rem solid var(--color-primary);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.6em;
+  padding: 1.25rem 2.8125rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 475.98px) {
+  html {
+    font-size: 7px;
+  }
+}

@@ -1,0 +1,192 @@
+/* Video Background Styles */
+.video-background {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+}
+
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content Overlay */
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+/* Carousel Controls */
+.carousel-control-next,
+.carousel-control-prev {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
+
+.carousel-control-prev {
+  left: 0px;
+  border-radius: 0 50% 50% 0;
+}
+
+.carousel-control-next {
+  right: 0px;
+  border-radius: 50% 0 0 50%;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  width: 60px;
+  background-color: var(--color-primary);
+  opacity: 1;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: brightness(0) invert(1);
+  width: 20px;
+  height: 20px;
+}
+
+/* Pattern Overlay */
+.pattern-overlay figure {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pattern-img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+figure {
+  font-family: "Poppins", sans-serif;
+}
+
+figure figcaption .welcome {
+  letter-spacing: 1rem;
+}
+
+h1 {
+  font-size: 9rem;
+  margin-block: 20px;
+}
+
+figure figcaption p {
+  font-size: 2rem;
+}
+
+figure figcaption .Web {
+  color: #a0ce4e;
+}
+
+figure figcaption .Marketing {
+  color: #00bea3;
+}
+
+figure figcaption .Branding {
+  color: #f1894c;
+}
+
+.start {
+  position: relative;
+  top: 35%;
+  cursor: pointer;
+}
+.scroll-down {
+  position: relative;
+  width: 1.5625rem;
+  height: 3.125rem;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll {
+  position: relative;
+  width: 0.3125rem;
+  height: 0.625rem;
+  background-color: #fff;
+  border-radius: 5px;
+  top: 0.625rem;
+  animation: scrollMove 1.5s infinite ease-in-out;
+}
+
+.content-overlay .down::before {
+  background-color: #fff;
+  bottom: -35px;
+  content: "";
+  height: 70px;
+  left: 0;
+  position: absolute;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  width: 50%;
+  z-index: 4;
+}
+
+.content-overlay .down::after {
+  background-color: #fff;
+  bottom: -35px;
+  content: "";
+  height: 70px;
+  position: absolute;
+  right: 0;
+  -webkit-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  width: 50%;
+  z-index: 4;
+}
+
+@keyframes scrollMove {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1.25rem);
+    opacity: 0;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
