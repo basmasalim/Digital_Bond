@@ -9,9 +9,9 @@
     </app-text-block-with-line>
     <div class="about-contant">
       <div class="row">
-        <div class="row px-lg-5">
+        <div class="row g-2">
           @for (item of aboutItems; track $index) {
-          <div class="col-lg-4 col-md-6 ps-lg-5 py-3">
+          <div class="col-lg-4 col-md-6 py-3">
             <figure>
               <img [src]="item.src" [alt]="item.title" class="max-w-100" />
               <figcaption>

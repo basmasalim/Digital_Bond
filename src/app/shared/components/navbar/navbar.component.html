@@ -1,6 +1,5 @@
 <nav
   class="navbar navbar-expand-lg position-fixed top-0 start-0 end-0 bg-dark bg-opacity-50"
-  id="navbar-example"
 >
   <div class="container">
     <a class="navbar-brand" routerLink="/home">
@@ -27,25 +26,44 @@
             aria-current="page"
             routerLink="/home"
             fragment="home"
+            [class.active]="activeSection === 'home'"
             >Home</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about" fragment="about">about</a>
+          <a
+            class="nav-link"
+            routerLink="/about"
+            fragment="about"
+            [class.active]="activeSection === 'about'"
+            >about</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/reviews" fragment="reviews"
+          <a
+            class="nav-link"
+            routerLink="/reviews"
+            fragment="reviews"
+            [class.active]="activeSection === 'reviews'"
             >reviews</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/process" fragment="process"
+          <a
+            class="nav-link"
+            routerLink="/process"
+            fragment="process"
+            [class.active]="activeSection === 'process'"
             >process</a
           >
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact" fragment="contact"
+          <a
+            class="nav-link"
+            routerLink="/contact"
+            fragment="contact"
+            [class.active]="activeSection === 'contact'"
             >contacts</a
           >
         </li>

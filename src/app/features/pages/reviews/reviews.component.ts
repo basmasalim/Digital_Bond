@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
-import { RouterLink } from '@angular/router';
 import { CornerbottonComponent } from "../../../shared/components/cornerbotton/cornerbotton.component";
 import { CornerTopComponent } from "../../../shared/components/corner-top/corner-top.component";
+import { BtnTopComponent } from "../../../shared/components/btn-top/btn-top.component";
 
 @Component({
   selector: 'app-reviews',
-  imports: [CarouselModule, RouterLink, CornerbottonComponent, CornerTopComponent],
+  imports: [CarouselModule, CornerbottonComponent, CornerTopComponent, BtnTopComponent],
   templateUrl: './reviews.component.html',
   styleUrl: './reviews.component.css',
 })

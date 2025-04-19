@@ -1,0 +1,43 @@
+.topbtn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.topbtn:hover {
+  background-color: transparent;
+  border-color: var(--color-white);
+  transform: translateX(-50%) scale(1.05);
+}
+
+.topbtn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.topbtn img {
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.topbtn:hover img {
+  transform: translateY(-3px);
+}

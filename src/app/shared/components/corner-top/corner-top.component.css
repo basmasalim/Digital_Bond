@@ -19,11 +19,11 @@
 
   &::before {
     left: 0;
-    transform: skewY(calc(-1 * var(--skew-angle)));
+    transform: skewY(calc(-0.7 * var(--skew-angle)));
   }
 
   &::after {
     right: 0;
-    transform: skewY(var(--skew-angle));
+    transform: skewY(calc(0.7 * var(--skew-angle)));
   }
 }

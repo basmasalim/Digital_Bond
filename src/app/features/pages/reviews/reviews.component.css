@@ -14,24 +14,7 @@ figure img {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   padding: 9px;
 }
-figure figcaption span {
-  color: var(--color-primary);
-}
 
-.topbtn {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  background-color: var(--color-primary);
-  border: 0.15rem solid var(--color-primary);
-  z-index: 9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -0%);
-  border-radius: 50%;
-  cursor: pointer;
+figure figcaption h6 {
+  color: var(--color-primary);
 }

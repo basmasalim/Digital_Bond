@@ -26,6 +26,10 @@ html {
   color: #545454;
 }
 
+body {
+  background-color: var(--color-white);
+}
+
 ::selection {
   background-color: var(--color-primary);
   color: var(--color-white);

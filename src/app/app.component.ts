@@ -15,4 +15,5 @@ import { ReviewsComponent } from "./features/pages/reviews/reviews.component";
 })
 export class AppComponent {
   title = 'Digital_Bond';
+
 }
