@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { BtnPrimaryComponent } from "../../../shared/components/btn-primary/btn-primary.component";
 import { VerticalLineComponent } from "../../../shared/components/vertical-line/vertical-line.component";
+import { TextBlockWithLineComponent } from '../../../shared/components/text-block-with-line/text-block-with-line.component';
 
 @Component({
   selector: 'app-about',
-  imports: [BtnPrimaryComponent, VerticalLineComponent],
+  imports: [TextBlockWithLineComponent, VerticalLineComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
@@ -41,6 +41,4 @@ export class AboutComponent {
       desc: 'Engage your customers with targeted SMS campaigns.',
     },
   ];
-
-
 }

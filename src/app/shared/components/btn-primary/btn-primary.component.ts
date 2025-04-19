@@ -1,9 +1,10 @@
 import { NgStyle } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-btn-primary',
-  imports: [NgStyle],
+  imports: [NgStyle, RouterLink],
   templateUrl: './btn-primary.component.html',
   styleUrl: './btn-primary.component.css'
 })

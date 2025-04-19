@@ -1,0 +1,29 @@
+.corner {
+  position: relative;
+
+  --corner-height: 70px;
+  --corner-offset: -2.1875rem;
+  --corner-bg: #fff;
+  --skew-angle: 5deg;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: var(--corner-offset);
+    height: var(--corner-height);
+    width: 50%;
+    background-color: var(--corner-bg);
+    z-index: 4;
+  }
+
+  &::before {
+    left: 0;
+    transform: skewY(calc(-1 * var(--skew-angle)));
+  }
+
+  &::after {
+    right: 0;
+    transform: skewY(var(--skew-angle));
+  }
+}

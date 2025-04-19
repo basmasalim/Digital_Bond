@@ -14,11 +14,6 @@
   --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
-  /* Spacing */
-  --space-sm: 10px;
-  --space-md: 20px;
-  --space-lg: 40px;
-
   /* Radius & Shadow */
   --radius: 12px;
   --shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -43,13 +38,31 @@ a {
   display: inline-block;
 }
 
+img {
+  vertical-align: middle;
+}
+/* ===== Typography ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-dark);
+}
+
 .max-w-500 {
   max-width: 600px;
+}
+
+.max-w-400 {
+  max-width: 400px;
 }
 
 .max-w-300 {
   max-width: 300px;
 }
+
 .max-w-100 {
   max-width: 100px;
 }

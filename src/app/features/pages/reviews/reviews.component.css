@@ -1,9 +1,10 @@
 .reviews {
   background-image: url("/images/texture_dark.jpg");
   background-size: cover;
-  /* margin: auto; */
   text-align: center;
   position: relative;
+  z-index: 44;
+  overflow: hidden;
 }
 figure img {
   height: 200px;

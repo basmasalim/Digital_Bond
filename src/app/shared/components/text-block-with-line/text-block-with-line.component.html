@@ -1,0 +1,20 @@
+<app-vertical-line />
+<div class="about-info mx-auto">
+  <h5 class="fw-medium fs-24 mt-3 max-w-400 mx-auto">{{ title }}</h5>
+  <p
+    class="my-4 fs-12 text-muted max-w-500 mx-auto"
+    [innerHTML]="description"
+  ></p>
+</div>
+<app-vertical-line />
+
+<div class="my-4">
+  <app-btn-primary
+    [textColor]="'#000'"
+    [textColorHover]="'#fff'"
+    [bgColor]="'#ffffff00'"
+    [bgColorHover]="'#ff497c'"
+    [borderColor]="'#ff497c'"
+  ></app-btn-primary>
+</div>
+<app-vertical-line />

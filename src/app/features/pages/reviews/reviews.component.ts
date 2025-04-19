@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
-import { CornerComponent } from "../../../shared/components/corner/corner.component";
+import { RouterLink } from '@angular/router';
+import { CornerbottonComponent } from "../../../shared/components/cornerbotton/cornerbotton.component";
+import { CornerTopComponent } from "../../../shared/components/corner-top/corner-top.component";
 
 @Component({
   selector: 'app-reviews',
-  imports: [CarouselModule, CornerComponent],
+  imports: [CarouselModule, RouterLink, CornerbottonComponent, CornerTopComponent],
   templateUrl: './reviews.component.html',
   styleUrl: './reviews.component.css',
 })
@@ -36,7 +38,7 @@ export class ReviewsComponent {
     touchDrag: true,
     pullDrag: false,
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1000,
     autoplayHoverPause: true,
     autoplayTimeout: 3000,

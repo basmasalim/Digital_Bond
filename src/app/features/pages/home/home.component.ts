@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { BtnPrimaryComponent } from "../../../shared/components/btn-primary/btn-primary.component";
-import { CornerComponent } from "../../../shared/components/corner/corner.component";
+import { CornerbottonComponent } from "../../../shared/components/cornerbotton/cornerbotton.component";
 
 @Component({
   selector: 'app-home',
-  imports: [BtnPrimaryComponent, CornerComponent],
+  imports: [BtnPrimaryComponent, CornerbottonComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

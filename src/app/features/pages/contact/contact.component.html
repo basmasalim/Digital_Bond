@@ -1,1 +1,38 @@
-<p class="vh-100 bg-info" id="contact">contact works!</p>
+<section id="contact">
+  <app-corner-top></app-corner-top>
+  <div class="text-center">
+    <img src="images/dark_line_short.png" alt="dark_line_short" />
+  </div>
+  <div class="container py-3">
+    <div class="row">
+      @for (item of contactItems; track $index) {
+      <div class="col-md-4 gy-2">
+        <figure
+          class="d-flex justify-content-center align-items-center flex-column text-center"
+        >
+          <div class="border-icon">
+            <div class="icon">
+              <img [src]="item.src" [alt]="item.title" />
+            </div>
+          </div>
+          <figcaption>
+            <h6 class="my-3">{{ item.title }}</h6>
+            <p class="my-0">
+              <strong>{{ item.titleInfo1 }} </strong>
+              <span class="text-muted">{{ item.desctitleInfo1 }}</span>
+            </p>
+            <p class="my-0">
+              <strong>{{ item.titleInfo2 }} </strong>
+              <span class="text-muted">{{ item.desctitleInfo2 }}</span>
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      }
+    </div>
+  </div>
+  <div class="text-center">
+    <img src="images/dark_line_short.png" alt="dark_line_short" />
+  </div>
+  <app-cornerbotton></app-cornerbotton>
+</section>

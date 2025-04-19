@@ -1,29 +1,12 @@
 <section id="about" class="text-center">
   <div class="container">
-    <app-vertical-line />
-    <div class="about-info max-w-500 mx-auto">
-      <h5 class="fw-medium fs-24">
-        We are the one of the most effective Web Development Companies
-      </h5>
-      <p class="my-4 fs-12 text-muted">
-        Getting online is easy. Succeeding online is a different story. You’ll
-        need more than just a beautiful website to stand out these days.
-        <span class="fw-medium text-dark">Online marketing solutions.</span>
-        Conversion-based web design coupled with a lead generating marketing
-        plan, your online success is inevitable.
-      </p>
-    </div>
-    <app-vertical-line />
-    <div class="my-4">
-      <app-btn-primary
-        [textColor]="'#000'"
-        [textColorHover]="'#fff'"
-        [bgColor]="'#ffffff00'"
-        [bgColorHover]="'#ff497c'"
-        [borderColor]="'#ff497c'"
-      ></app-btn-primary>
-    </div>
-    <app-vertical-line />
+    <app-text-block-with-line
+      [title]="'We are one of the most effective Web Development Companies'"
+      [description]="
+        'Getting online is easy. Succeeding online is a different story. You’ll need more than just a beautiful website to stand out these days. <span class=\'fw-medium text-dark\'>Online marketing solutions.</span> Conversion-based web design coupled with a lead generating marketing plan, your online success is inevitable.'
+      "
+    >
+    </app-text-block-with-line>
     <div class="about-contant">
       <div class="row">
         <div class="row px-lg-5">

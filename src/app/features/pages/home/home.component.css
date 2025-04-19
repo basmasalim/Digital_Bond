@@ -81,7 +81,12 @@
   letter-spacing: 0.5rem;
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
-
+h1,
+h2,
+h3,
+p {
+  color: var(--color-white);
+}
 h1 {
   font-size: 9rem;
 }

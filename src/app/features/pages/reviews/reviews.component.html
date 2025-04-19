@@ -1,5 +1,5 @@
-<app-corner></app-corner>
-<section id="reviews" class="reviews">
+<section id="reviews" class="reviews" routerLink="/reviews" fragment="reviews">
+  <app-corner-top></app-corner-top>
   <div class="container">
     <div class="line mb-5">
       <img src="images/white_line_big.png" alt="white_line_big" />
@@ -28,11 +28,11 @@
     <div class="line mt-5">
       <img src="images/white_line_big.png" alt="white_line_big" />
     </div>
-    <div class="text-center">
-      <a class="rounded-circle topbtn">
-        <img src="images/up-arrow-svgrepo-com.svg" alt="" width="12" />
-      </a>
-    </div>
+  </div>
+  <app-cornerbotton></app-cornerbotton>
+  <div class="text-center" id="reviews">
+    <a class="rounded-circle topbtn">
+      <img src="images/up-arrow-svgrepo-com.svg" alt="" width="12" />
+    </a>
   </div>
 </section>
-<app-corner></app-corner>

@@ -1,0 +1,50 @@
+#contact {
+  background-color: var(--color-bg);
+  position: relative;
+  z-index: 44;
+  overflow: hidden;
+}
+#contact figure .icon {
+  background-color: var(--color-white);
+  border-radius: 50%;
+  color: var(--color-dark);
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact figure .border-icon {
+  border: 4px solid #fff;
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+#contact figure .border-icon:hover {
+  animation: scaleDisappear 0.5s;
+}
+
+@keyframes scaleDisappear {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h6 {
+  font-size: 23px;
+}
