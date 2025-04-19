@@ -6,10 +6,11 @@ import { ProcessComponent } from "./features/pages/process/process.component";
 import { ContactComponent } from "./features/pages/contact/contact.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
 import { ReviewsComponent } from "./features/pages/reviews/reviews.component";
+import { PageCopyrightComponent } from "./shared/components/page-copyright/page-copyright.component";
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, HomeComponent, AboutComponent, ProcessComponent, ContactComponent, FooterComponent, ReviewsComponent],
+  imports: [NavbarComponent, HomeComponent, AboutComponent, ProcessComponent, ContactComponent, FooterComponent, ReviewsComponent, PageCopyrightComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { CornerbottonComponent } from "../../../shared/components/cornerbotton/cornerbotton.component";
 import { CornerTopComponent } from "../../../shared/components/corner-top/corner-top.component";
 
 @Component({
   selector: 'app-contact',
-  imports: [CornerbottonComponent, CornerTopComponent],
+  imports: [CornerTopComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })

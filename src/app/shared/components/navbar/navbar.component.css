@@ -2,6 +2,12 @@ nav {
   z-index: 999;
 }
 
+.navbar-scrolled {
+  background-color: var(--color-dark) !important;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 img {
   max-width: 70px;
 }

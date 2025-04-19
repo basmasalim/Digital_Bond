@@ -13,7 +13,7 @@
     bottom: var(--corner-offset);
     height: var(--corner-height);
     width: 50%;
-    background-color: var(--corner-bg);
+    background-color: var(--bgColor);
     z-index: 4;
   }
 

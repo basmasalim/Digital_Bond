@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cornerbotton',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './cornerbotton.component.css'
 })
 export class CornerbottonComponent {
+  @Input() bgColor: string = '#ffffff';
 
+  @HostBinding('style.--bgColor') get setBgColor() {
+    return this.bgColor;
+  }
 }

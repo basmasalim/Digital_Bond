@@ -1,0 +1,38 @@
+footer {
+  background-image: url("/images/texture_dark.jpg");
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+footer .footer-contant {
+  padding-top: 60px;
+}
+
+footer .footer-contant h3 {
+  font-size: 3rem;
+}
+footer .footer-contant ul li {
+  margin-inline: 3px;
+}
+.logo {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-dark);
+  border: 2px solid var(--color-dark);
+  color: var(--color-primary);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
