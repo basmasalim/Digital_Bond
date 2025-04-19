@@ -3,16 +3,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* ===== Video Background ===== */
-.video-background {
+/* ===== Media Container ===== */
+.media-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  height: 100vh;
   overflow: hidden;
-  background-color: #000; /* Fallback */
+  padding-top: 56.25%;
 }
 
-.video-background iframe {
+.media-container iframe,
+.media-container img {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +22,7 @@
   object-fit: cover;
 }
 
-/* ===== Content Overlay ===== */
+/* ===== Content Overlay (Desktop) ===== */
 .content-overlay {
   position: absolute;
   top: 0;
@@ -32,22 +33,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--color-white);
+  color: white;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
 }
 
-/* ===== Pattern Overlay ===== */
-.pattern-overlay {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.imgCarouselItem {
+  padding-top: 200px;
 }
 
 /* Alternative version for single centered pattern */
@@ -125,13 +117,13 @@ p {
 /* ===== Scroll Down Indicator ===== */
 .scroll-down {
   position: relative;
-  width: 1.5625rem;
-  height: 3.125rem;
-  border: 0.125rem solid var(--color-white);
+  width: 1.5rem;
+  height: 3rem;
+  border: 2px solid var(--color-white);
   border-radius: 0.75rem;
   display: flex;
   justify-content: center;
-  cursor: pointer;
+  margin: 1rem 0;
 }
 
 .scroll {
@@ -198,36 +190,41 @@ p {
   height: 1.25rem;
 }
 
-/* ===== Responsive Adjustments ===== */
+/* ===== Mobile Layout (content below media) ===== */
+@media (max-width: 700px) {
+  .media-container {
+    height: 50vh;
+    position: relative;
+  }
 
-@media (max-width: 1260px) {
-  .scroll-down,
-  .scroll {
-    width: 0;
-    height: 0;
+  .content-overlay {
+    position: relative;
+    height: 50vh;
+    padding: 2rem 1rem;
+    background-color: var(--color-dark);
   }
-  .start {
-    margin-top: 16px;
-  }
-}
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 35px;
+  .imgCarouselItem {
+    padding-top: 100px;
   }
-  .start {
-    margin-top: 10px;
-  }
+
   .carousel-item::before {
     content: none;
   }
-}
 
-@media (max-width: 576px) {
   h1 {
-    font-size: 30px;
+    font-size: 3rem;
   }
+
+  .welcome {
+    letter-spacing: 0.3rem;
+  }
+
   .start {
-    margin-top: 6px;
+    margin-top: 1rem;
+  }
+
+  .scroll-down {
+    display: none; /* Hide scroll indicator on mobile */
   }
 }
