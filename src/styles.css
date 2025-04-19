@@ -1,13 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+/* ===== Base Styles ===== */
 :root {
   /* Colors */
   --color-primary: #ff497c;
   --color-bg: #f4f4f5;
   --color-white: #fff;
   --color-dark: #1f2732;
-  --color-light: #f8f8f8;
-  --color-border: #ddd;
-  --color-text: #333;
+  --web-color: #a0ce4e;
+  --marketing-color: #00bea3;
+  --branding-color: #f1894c;
 
   /* Font */
   --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -42,22 +43,31 @@ a {
   display: inline-block;
 }
 
-.main-btn {
-  background-color: var(--color-primary);
-  border: 0.25rem solid var(--color-primary);
-  border-radius: 50px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  line-height: 1.6em;
-  padding: 1.25rem 2.8125rem;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-  color: white;
+.max-w-500 {
+  max-width: 600px;
 }
 
-.main-btn:hover {
-  background-color: transparent;
+.max-w-300 {
+  max-width: 300px;
+}
+.max-w-100 {
+  max-width: 100px;
+}
+
+.fs-12 {
+  font-size: 14.4px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.mt-16 {
+  margin-top: 60px;
 }
 
 /* Large devices (desktops, 992px and up) */

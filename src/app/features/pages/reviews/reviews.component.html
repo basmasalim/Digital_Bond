@@ -1,1 +1,38 @@
-<p>reviews works!</p>
+<app-corner></app-corner>
+<section id="reviews" class="reviews">
+  <div class="container">
+    <div class="line mb-5">
+      <img src="images/white_line_big.png" alt="white_line_big" />
+    </div>
+    <owl-carousel-o [options]="reviewsOptions">
+      @for (item of reviewsItems; track $index) {
+      <ng-template carouselSlide>
+        <div class="review-content">
+          <figure
+            class="d-flex justify-content-center align-items-center flex-column"
+          >
+            <img [src]="item.src" [alt]="item.name" class="rounded-circle" />
+            <figcaption>
+              <span class="fw-bold">{{ item.jop }}</span>
+              <h5 class="fw-bold fs-4 my-3 text-white">{{ item.name }}</h5>
+              <p class="text-white-50 fst-italic max-w-500 mx-auto fs-16">
+                {{ item.desc }}
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </ng-template>
+
+      }
+    </owl-carousel-o>
+    <div class="line mt-5">
+      <img src="images/white_line_big.png" alt="white_line_big" />
+    </div>
+    <div class="text-center">
+      <a class="rounded-circle topbtn">
+        <img src="images/up-arrow-svgrepo-com.svg" alt="" width="12" />
+      </a>
+    </div>
+  </div>
+</section>
+<app-corner></app-corner>

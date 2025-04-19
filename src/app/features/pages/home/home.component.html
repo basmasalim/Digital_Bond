@@ -6,7 +6,6 @@
   >
     <div class="carousel-inner">
       <!-- Slide 1 - Video Background -->
-      <!-- data-bs-interval="3000" -->
       <div class="carousel-item active">
         <div class="video-background">
           <iframe
@@ -14,33 +13,32 @@
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            loading="lazy"
           ></iframe>
           <div class="content-overlay">
             <div class="pattern-overlay">
-              <figure>
-                <img
-                  src="images/pattern.png"
-                  alt="pattern"
-                  class="pattern-img"
-                />
-                <figcaption class="position-absolute">
-                  <span class="welcome">welcome to</span>
-                  <h1>Digital Bond</h1>
-                  <p>
-                    <span class="Web">Web Design</span>,
-                    <span class="Marketing"> Marketing </span>&
-                    <span class="Branding"> Branding</span>
-                  </p>
-                </figcaption>
-              </figure>
+              <span class="welcome">welcome to</span>
+              <h1>Digital Bond</h1>
+              <p>
+                <span class="Web">Web Development </span>,
+                <span class="Marketing"> Marketing </span>&
+                <span class="Branding"> Mobile Apps</span>
+              </p>
+
+              <div class="start">
+                <app-btn-primary
+                  [textColor]="'#ffffff'"
+                  [textColorHover]="'#ff497c'"
+                  [bgColor]="'#ff497c'"
+                  [bgColorHover]="'#ffffff00'"
+                  [borderColor]="'#ff497c'"
+                  (click)="navigateToContact()"
+                ></app-btn-primary>
+              </div>
             </div>
-            <div class="start">
-              <button class="main-btn text-center">
-                <a routerLink="/contact" fragment="contact">Get Started</a>
-              </button>
-            </div>
-            <div class="down">
-              <a>
+
+            <div class="down mt-auto">
+              <a (click)="navigateToAbout()">
                 <div class="scroll-down mb-5">
                   <div class="scroll"></div>
                 </div>
@@ -49,32 +47,27 @@
           </div>
         </div>
       </div>
-
       <!-- Slide 2 - Image -->
       <div class="carousel-item" data-bs-interval="3000">
         <img src="images/slide_02.jpg" class="d-block w-100" alt="slide_02" />
         <div class="content-overlay">
           <div class="pattern-overlay">
-            <figure>
-              <img src="images/pattern.png" alt="pattern" class="pattern-img" />
-              <figcaption class="position-absolute">
-                <span class="welcome">welcome to</span>
-                <h1>Digital Bond</h1>
-                <p>
-                  <span class="Web">Web Design</span>,
-                  <span class="Marketing"> Marketing </span>&
-                  <span class="Branding"> Branding</span>
-                </p>
-              </figcaption>
-            </figure>
+            <span class="text-capitalize online">online</span>
+            <h2>Marketing</h2>
+            <span class="welcome">Solutions</span>
+            <div class="start">
+              <app-btn-primary
+                [textColor]="'#ffffff'"
+                [textColorHover]="'#ff497c'"
+                [bgColor]="'#ff497c'"
+                [bgColorHover]="'#ffffff00'"
+                [borderColor]="'#ff497c'"
+                (click)="navigateToContact()"
+              ></app-btn-primary>
+            </div>
           </div>
-          <div class="start">
-            <button class="main-btn text-center">
-              <a routerLink="/contact" fragment="contact">Get Started</a>
-            </button>
-          </div>
-          <div class="down">
-            <a>
+          <div class="down mt-auto">
+            <a (click)="navigateToAbout()">
               <div class="scroll-down mb-5">
                 <div class="scroll"></div>
               </div>
@@ -82,32 +75,26 @@
           </div>
         </div>
       </div>
-
-      <!-- Slide 3 - Image -->
+      <!-- Slide 2 - Image -->
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="images/slide_03.jpg" class="d-block w-100" alt="slide_03" />
+        <img src="images/slide_03.jpg" class="d-block w-100" alt="slide_02" />
         <div class="content-overlay">
           <div class="pattern-overlay">
-            <figure>
-              <img src="images/pattern.png" alt="pattern" class="pattern-img" />
-              <figcaption class="position-absolute">
-                <span class="welcome">welcome to</span>
-                <h1>Digital Bond</h1>
-                <p>
-                  <span class="Web">Web Design</span>,
-                  <span class="Marketing"> Marketing </span>&
-                  <span class="Branding"> Branding</span>
-                </p>
-              </figcaption>
-            </figure>
+            <span class="welcome">Modern</span>
+            <h3>Marketing <br />& Media Production</h3>
+            <div class="start">
+              <app-btn-primary
+                [textColor]="'#ffffff'"
+                [textColorHover]="'#ff497c'"
+                [bgColor]="'#ff497c'"
+                [bgColorHover]="'#ffffff00'"
+                [borderColor]="'#ff497c'"
+                (click)="navigateToContact()"
+              ></app-btn-primary>
+            </div>
           </div>
-          <div class="start">
-            <button class="main-btn text-center">
-              <a routerLink="/contact" fragment="contact">Get Started</a>
-            </button>
-          </div>
-          <div class="down">
-            <a>
+          <div class="down mt-auto">
+            <a (click)="navigateToAbout()">
               <div class="scroll-down mb-5">
                 <div class="scroll"></div>
               </div>
@@ -116,6 +103,7 @@
         </div>
       </div>
     </div>
+    <app-corner></app-corner>
 
     <!-- Carousel Controls -->
     <button

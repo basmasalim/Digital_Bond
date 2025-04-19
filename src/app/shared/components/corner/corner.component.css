@@ -1,0 +1,30 @@
+.corner {
+  position: relative;
+}
+.corner::before {
+  background-color: #fff;
+  bottom: -2.1875rem;
+  content: "";
+  height: 70px;
+  left: 0;
+  position: absolute;
+  -webkit-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  transform: skewY(3deg);
+  width: 50%;
+  z-index: 4;
+}
+
+.corner::after {
+  background-color: #fff;
+  bottom: -2.1875rem;
+  content: "";
+  height: 70px;
+  position: absolute;
+  right: 0;
+  -webkit-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  width: 50%;
+  z-index: 4;
+}
